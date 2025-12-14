@@ -16,15 +16,99 @@
       <section>
         <h2>Contact Form</h2>
 
+        <!-- Screen-reader friendly status/error area (optional, but helpful) -->
+        <p id="form-status" aria-live="polite"></p>
+
         <form action="#" method="post">
-          <div>
-            <label for="name">Name:</label><br />
-            <input id="name" name="name" type="text" required />
-          </div>
+          <fieldset>
+            <legend>Contact form</legend>
 
-          <br />
+            <div>
+              <label for="name">Name:</label><br />
+              <p id="name-hint">Enter your full name.</p>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                aria-required="true"
+                aria-describedby="name-hint"
+                autocomplete="name"
+              />
+            </div>
 
-          <div>
-            <label for="email">Email:</label><br />
-            <input id="email" name="email" type="email" required />
-          </di
+            <br />
+
+            <div>
+              <label for="email">Email:</label><br />
+              <p id="email-hint">We’ll only use this to reply.</p>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                aria-required="true"
+                aria-describedby="email-hint"
+                autocomplete="email"
+              />
+            </div>
+
+            <br />
+
+            <div>
+              <label for="message">Message:</label><br />
+              <p id="message-hint">Write your message (at least a few words).</p>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                cols="40"
+                required
+                aria-required="true"
+                aria-describedby="message-hint"
+              ></textarea>
+            </div>
+
+            <br />
+
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Sample Data Table</h2>
+
+        <table border="1" cellpadding="8">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Apple</td>
+              <td>Fruit</td>
+              <td>$1</td>
+            </tr>
+            <tr>
+              <td>Notebook</td>
+              <td>Stationery</td>
+              <td>$3</td>
+            </tr>
+            <tr>
+              <td>Coffee</td>
+              <td>Beverage</td>
+              <td>$4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
