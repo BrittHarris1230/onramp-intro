@@ -57,4 +57,18 @@ img {
   width: 100%;
   max-width: 800px; /* keeps content in a nice centered column */
 }
+/* Center a div using FLEX (modern) */
+.center-parent {
+  display: flex;
+  justify-content: center;  /* left/right */
+  align-items: center;      /* up/down */
+  min-height: 220px;        /* gives space so you can SEE the centering */
+}
+
+.center-box {
+  border: 3px solid #333;
+  padding: 16px;
+  max-width: 600px;
+  width: 100%;
+}
 
