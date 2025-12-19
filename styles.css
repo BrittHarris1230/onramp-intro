@@ -22,6 +22,11 @@ a:hover {
 body {
   margin: 0;        /* margin = space outside the body */
   padding: 24px;    /* padding = space inside the body edge */
+
+  display: flex;            /* FLEX */
+  justify-content: center;  /* centers your .container left/right */
+  align-items: flex-start;  /* keeps content at the top (not vertically centered) */
+  min-height: 100vh;
 }
 
 header {
@@ -48,3 +53,8 @@ img {
   margin-bottom: 16px;
   max-width: 220px;
 }
+.container {
+  width: 100%;
+  max-width: 800px; /* keeps content in a nice centered column */
+}
+
